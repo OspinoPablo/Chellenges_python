@@ -36,9 +36,7 @@ result={
 index = input("Digite el id del producto: ")
 
 if index in product['idp']:
-    print("entro 1")
     if product['idp'][index]['cat_id'] in category['idc']:
-        print("entro 2")
         product_name = product['idp'][index]['cat_id']
         result.update({'id': index})
         result.update({'name': product['idp'][index]['name']})
